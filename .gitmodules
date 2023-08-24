@@ -1,0 +1,3 @@
+[submodule "IOS/ntc-templates"]
+	path = IOS/ntc-templates
+	url = https://github.com/networktocode/ntc-templates.git
