@@ -29,8 +29,6 @@ try:
     interfaces = connection.connect.send_command('show ip int brief')
     print('interfaces which are up \n')
     print(interfaces)
-    ping_res = connection.connect.send_command(f'ping {ip}', expect_string='R1#', read_timeout=20)
-    print(ping_res)
     connection.connect.close()
 except Exception as e:
     print(e)
