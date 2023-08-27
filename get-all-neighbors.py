@@ -1,14 +1,8 @@
-
-import json
-
-from connection import connection_to_device
+from connection import connection_to_device;
 import connection
-import constants 
-from getpass import getpass
-
+import constants
 from getUserDetails import getUserDetail
 import getUserDetails
-
 
 getUserDetail()
 
@@ -20,12 +14,12 @@ constants.connection_profiles['port']=getUserDetails.port
 
 try:
     connection_to_device(**constants.connection_profiles)
-    interfaces = connection.connect.send_command('show ip int brief')
-    print('interfaces which are up \n')
-    print(interfaces)
-    connection.connect.close()
+    
 except Exception as e:
     print(e)
 finally:
-    print('connection closed')
-    
+    print('Connection is closed')
+
+
+
+
