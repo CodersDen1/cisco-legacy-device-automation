@@ -1,19 +1,18 @@
 import os
 from netmiko import ConnectHandler
 import json
+from getpass import getpass
 
 from connection import connection_to_device
 import connection 
 
-
-
-user= 'akki'
-password='cisco'
-sec='cisco'
-ip ='11.1.1.1'
+user= input ("Enter Username : ")
+password= getpass ("Enter Password : ")
+sec=password
+ip =input ("Enter Device IP : ")
 
 try:
-    connection_to_device(username=user,password=password,secret=sec,ipadd='192.168.213.131',port=23)
+    connection_to_device(username=user,password=password,secret=sec,ipadd=ip,port=23)
     interfaces = connection.connect.send_command('show ip int brief')
     print('interfaces which are up \n')
     print(interfaces)
@@ -22,4 +21,3 @@ except Exception as e:
     print(e)
 finally:
     print('connection closed')
-    
