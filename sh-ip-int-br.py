@@ -7,7 +7,7 @@ import connection
 
 
 
-user= 'akki'
+user= input('Username')
 password='cisco'
 sec='cisco'
 
