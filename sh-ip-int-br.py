@@ -10,19 +10,7 @@ import connection
 user= input('Username')
 password='cisco'
 sec='cisco'
-
 ip ='11.1.1.1'
-
-# Connection to R
-
-router={
-    'device_type':'cisco_ios_telnet',
-    'ip':'192.168.213.131',
-    'username':user,
-    'password':password,
-    'secret':sec,
-    'port': 23
-}
 
 try:
     connection_to_device(username=user,password=password,secret=sec,ipadd='192.168.213.131',port=23)
