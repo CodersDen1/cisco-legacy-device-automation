@@ -1,5 +1,6 @@
 
 import json
+from getpass import getpass
 
 from connection import connection_to_device
 import connection
@@ -8,7 +9,6 @@ from getpass import getpass
 
 from getUserDetails import getUserDetail
 import getUserDetails
-
 
 getUserDetail()
 
