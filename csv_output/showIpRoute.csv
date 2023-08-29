@@ -1,0 +1,7 @@
+metric,protocol,distance,nexthop_vrf,uptime,nexthop_ip,network,mask,type,vrf,nexthop_if
+0,S,254,,,192.168.213.2,0.0.0.0,0,,,
+1,R,120,,00:00:22,192.168.213.133,11.0.0.0,8,,,Ethernet0/0
+,C,,,,,192.168.1.0,24,,,Ethernet0/1
+,L,,,,,192.168.1.1,32,,,Ethernet0/1
+,C,,,,,192.168.213.0,24,,,Ethernet0/0
+,L,,,,,192.168.213.131,32,,,Ethernet0/0
