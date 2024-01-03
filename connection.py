@@ -15,5 +15,5 @@ def connection_to_device(username,password, secret, ipadd,port):
     global connect    
     connect=ConnectHandler(**device_cred)
     connect.enable()
-    
+    print("new file")
 
